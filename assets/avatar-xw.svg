@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+  <defs>
+    <linearGradient id="g" x1="30" y1="20" x2="154" y2="158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F6FB"/>
+      <stop offset="1" stop-color="#D4E0EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="176" height="176" rx="44" fill="url(#g)"/>
+  <circle cx="88" cy="62" r="28" fill="#89A8C6"/>
+  <path d="M44 138C44 114.804 62.804 96 86 96H90C113.196 96 132 114.804 132 138V148H44V138Z" fill="#89A8C6"/>
+  <rect x="56" y="16" width="64" height="20" rx="10" fill="#F08D2E" opacity="0.9"/>
+  <text x="88" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#35597D">XW</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+  <rect width="176" height="176" rx="44" fill="#E8F1FA"/>
+  <circle cx="88" cy="66" r="28" fill="#7EA0BE"/>
+  <path d="M46 140C46 117.909 63.9086 100 86 100H90C112.091 100 130 117.909 130 140V148H46V140Z" fill="#7EA0BE"/>
+  <text x="88" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#35597D">NT</text>
+</svg>
