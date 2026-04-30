@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyTerrier Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner page-width">
+      <div class="logo-group" aria-label="Partner university logos">
+        <img src="assets/logo-glasgow.png" alt="University of Glasgow" class="top-logo logo-glasgow" />
+        <span class="logo-separator" aria-hidden="true"></span>
+        <img src="assets/logo-pisa.png" alt="Università di Pisa" class="top-logo logo-pisa" />
+        <span class="logo-separator" aria-hidden="true"></span>
+        <img src="assets/logo-uibe.png" alt="University of International Business and Economics" class="top-logo logo-uibe" />
+      </div>
+      <div class="sigir-mark" aria-label="SIGIR 2026">
+        <span class="sigir-text">SIGIR</span>
+        <span class="sigir-divider"></span>
+        <span class="sigir-year">2026</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="page-width hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Tutorial Session</p>
+          <h1>
+            <span class="emoji">🔍</span> Retrieve,
+            <span class="emoji">🧠</span> <span class="accent">Rerank</span>,
+            <span class="emoji">💬</span> Answer,
+            <span class="emoji">⚙️</span>&nbsp;Experiment
+          </h1>
+          <p class="subtitle">Hands-On IR Research with PyTerrier</p>
+
+          <div class="speaker-grid">
+            <article class="speaker-card">
+              <img src="assets/avatar-cm.svg" alt="Craig Macdonald avatar placeholder" class="speaker-avatar" />
+              <div class="speaker-meta">
+                <h3>Craig Macdonald</h3>
+                <p>University of Glasgow</p>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <img src="assets/avatar-sm.svg" alt="Sean MacAvaney avatar placeholder" class="speaker-avatar" />
+              <div class="speaker-meta">
+                <h3>Sean MacAvaney</h3>
+                <p>University of Glasgow</p>
+              </div>
+            </article>
+
+            <article class="speaker-card">
+              <img src="assets/avatar-nt.svg" alt="Nicola Tonellotto avatar placeholder" class="speaker-avatar" />
+              <div class="speaker-meta">
+                <h3>Nicola Tonellotto</h3>
+                <p>University of Pisa</p>
+              </div>
+            </article>
+
+            <article class="speaker-card featured">
+              <img src="assets/avatar-xw.svg" alt="Xiao Wang avatar placeholder" class="speaker-avatar" />
+              <div class="speaker-meta">
+                <h3>Xiao Wang</h3>
+                <p>Uni. of Int. Business &amp; Economics</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/abstract_shape.svg" alt="" class="hero-shape" />
+        </div>
+      </div>
+    </section>
+
+    <section class="outline-section">
+      <div class="page-width">
+        <h2>Outline</h2>
+        <div class="title-underline"></div>
+
+        <div class="outline-grid">
+          <article class="outline-card">
+            <h3><span class="session-number">01.</span> Platform <span class="speaker-name">(Craig)</span></h3>
+            <ul>
+              <li>Introduction</li>
+              <li>Data Model &amp; Transformers</li>
+              <li>Operators</li>
+              <li>Evaluation &amp; Experiments</li>
+              <li>Platform extras</li>
+            </ul>
+            <div class="resource-links" aria-label="Session 1 resources">
+              <a class="resource-link" href="slides/session-01-platform.pdf" target="_blank" rel="noopener">Slides ↗</a>
+              <a class="resource-link secondary" href="notebooks/session-01-platform.ipynb" target="_blank" rel="noopener">Notebook Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="outline-card">
+            <h3><span class="session-number">02.</span> Retrieval Menagerie <span class="speaker-name">(Nicola)</span></h3>
+            <ul>
+              <li>Lexical &amp; Learned Sparse Retrieval</li>
+              <li>Dense Retrieval &amp; Multi-Vec Retrieval</li>
+              <li>PRF &amp; Re-Ranking</li>
+            </ul>
+            <div class="resource-links" aria-label="Session 2 resources">
+              <a class="resource-link" href="slides/session-02-retrieval-menagerie.pdf" target="_blank" rel="noopener">Slides ↗</a>
+              <a class="resource-link secondary" href="notebooks/session-02-retrieval-menagerie.ipynb" target="_blank" rel="noopener">Notebook Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="outline-card">
+            <h3><span class="session-number">03.</span> Generation Menagerie <span class="speaker-name">(Sean)</span></h3>
+            <ul>
+              <li>LLM Backends &amp; Vanilla RAG</li>
+              <li>Generation Evaluation</li>
+              <li>Retrieval-as-a-tool</li>
+            </ul>
+            <div class="resource-links" aria-label="Session 3 resources">
+              <a class="resource-link" href="slides/session-03-generation-menagerie.pdf" target="_blank" rel="noopener">Slides ↗</a>
+              <a class="resource-link secondary" href="notebooks/session-03-generation-menagerie.ipynb" target="_blank" rel="noopener">Notebook Demo ↗</a>
+            </div>
+          </article>
+
+          <article class="outline-card">
+            <h3><span class="session-number">04.</span> Conclusion <span class="speaker-name">(Craig)</span></h3>
+            <ul>
+              <li>Patterns &amp; Anti-Patterns</li>
+              <li>Wrap-up</li>
+            </ul>
+            <div class="resource-links" aria-label="Session 4 resources">
+              <a class="resource-link" href="slides/session-04-conclusion.pdf" target="_blank" rel="noopener">Slides ↗</a>
+              <a class="resource-link secondary" href="notebooks/session-04-conclusion.ipynb" target="_blank" rel="noopener">Notebook Demo ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="citation-section">
+      <div class="page-width">
+        <h2>Citation</h2>
+        <p>
+          Retrieve, Rerank, Answer, Experiment: Hands-On IR Research with PyTerrier.
+          Craig Macdonald, Sean MacAvaney, Nicola Tonellotto and Xiao Wang.
+          In <em>Proceedings of ACM SIGIR 2026</em>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <span class="footer-mark">🌍</span>
+      <span class="footer-text">pyterrier-tutorial.github.io</span>
+    </div>
+  </footer>
+</body>
+</html>
