@@ -81,7 +81,16 @@
       </div>
     </section>
 
-    <section class="outline-section">
+    <nav class="quick-nav page-width" aria-label="Page sections">
+      <a href="#outline">Schedule</a>
+      <a href="#previous-tutorials">Previous Tutorials</a>
+      <a href="#related-reading">Related Reading</a>
+      <a href="#github-links">GitHub</a>
+      <a href="#documentation">Documentation</a>
+      <a href="#presenters">Presenters</a>
+    </nav>
+
+    <section class="outline-section" id="outline">
       <div class="page-width">
         <h2>Outline</h2>
         <div class="title-underline"></div>
@@ -137,6 +146,221 @@
             <div class="resource-links" aria-label="Session 4 resources">
               <a class="resource-link" href="slides/session-04-conclusion.pdf" target="_blank" rel="noopener">Slides ↗</a>
               <a class="resource-link secondary" href="notebooks/session-04-conclusion.ipynb" target="_blank" rel="noopener">Notebook Demo ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="content-section" id="previous-tutorials">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="section-kicker">Tutorial History</p>
+          <h2>Previous Tutorials</h2>
+          <p>
+            This SIGIR edition builds on earlier PyTerrier tutorials while shifting the emphasis toward
+            PyTerrier 1.0, modern retrieval workflows, RAG pipelines, and hands-on experimentation.
+          </p>
+        </div>
+
+        <div class="history-grid">
+          <article class="history-card">
+            <div class="card-year">2021</div>
+            <h3>ECIR 2021</h3>
+            <p>IR From Bag-of-words to BERT and Beyond through Practical Experiments.</p>
+            <div class="button-row">
+              <a class="resource-link" href="https://github.com/terrier-org/ecir2021tutorial" target="_blank" rel="noopener">Tutorial Repo ↗</a>
+              <a class="resource-link secondary" href="https://smac.pub/ecir2021-tutnir" target="_blank" rel="noopener">Abstract ↗</a>
+            </div>
+          </article>
+
+          <article class="history-card">
+            <div class="card-year">2021</div>
+            <h3>CIKM 2021</h3>
+            <p>A virtual edition covering practical IR experiments with PyTerrier and neural ranking methods.</p>
+            <div class="button-row">
+              <a class="resource-link" href="https://github.com/terrier-org/cikm2021tutorial" target="_blank" rel="noopener">Tutorial Repo ↗</a>
+              <a class="resource-link secondary" href="https://www.cikm2021.org/programme/tutorials/ir-from-bag-of-words-to-bert-and-beyond-through-practical-experiments" target="_blank" rel="noopener">Tutorial Page ↗</a>
+            </div>
+          </article>
+
+          <article class="history-card">
+            <div class="card-year">2022</div>
+            <h3>BCS IRSG Search Solutions</h3>
+            <p>An in-person practical tutorial at the British Computer Society headquarters.</p>
+            <div class="button-row">
+              <a class="resource-link" href="https://github.com/terrier-org/searchsolutions2022-tutorial/" target="_blank" rel="noopener">Tutorial Repo ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section soft-section" id="related-reading">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="section-kicker">Background</p>
+          <h2>Related Reading</h2>
+          <p>
+            These papers and resources provide useful background for the platform, pipeline composition,
+            experiment design, neural retrieval, and RAG topics covered in the tutorial.
+          </p>
+        </div>
+
+        <div class="reading-grid">
+          <article class="link-card">
+            <span class="link-icon">🧪</span>
+            <h3>Declarative Experimentation in IR using PyTerrier</h3>
+            <p>The core PyTerrier paper introducing the declarative experimental framework.</p>
+            <a href="https://arxiv.org/abs/2007.14271" target="_blank" rel="noopener">Read paper ↗</a>
+          </article>
+
+          <article class="link-card">
+            <span class="link-icon">🧩</span>
+            <h3>IR From Bag-of-words to BERT and Beyond</h3>
+            <p>The earlier tutorial abstract describing practical experimentation with PyTerrier and OpenNIR.</p>
+            <a href="https://smac.pub/ecir2021-tutnir" target="_blank" rel="noopener">Read abstract ↗</a>
+          </article>
+
+          <article class="link-card">
+            <span class="link-icon">📈</span>
+            <h3>Pipeline Inspection and Visualization</h3>
+            <p>Background on inspecting, visualising, and interoperating with PyTerrier pipelines.</p>
+            <a href="https://arxiv.org/abs/2601.17502" target="_blank" rel="noopener">Read paper ↗</a>
+          </article>
+
+          <article class="link-card">
+            <span class="link-icon">💬</span>
+            <h3>Declarative RAG Pipelines in PyTerrier</h3>
+            <p>Material related to constructing and evaluating RAG pipelines using PyTerrier.</p>
+            <a href="https://github.com/terrierteam/pyterrier_rag" target="_blank" rel="noopener">View project ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="github-links">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="section-kicker">Code</p>
+          <h2>GitHub Links</h2>
+          <p>
+            The PyTerrier ecosystem includes the core platform and plugins for dense retrieval, late interaction,
+            RAG, reranking, and high-performance retrieval engines.
+          </p>
+        </div>
+
+        <div class="compact-link-grid">
+          <a class="compact-link" href="https://github.com/terrier-org/pyterrier" target="_blank" rel="noopener">
+            <strong>PyTerrier</strong><span>Core platform</span>
+          </a>
+          <a class="compact-link" href="https://github.com/terrierteam/pyterrier_colbert" target="_blank" rel="noopener">
+            <strong>PyTerrier ColBERT</strong><span>Late-interaction retrieval</span>
+          </a>
+          <a class="compact-link" href="https://github.com/terrierteam/pyterrier_rag" target="_blank" rel="noopener">
+            <strong>PyTerrier RAG</strong><span>RAG pipelines and readers</span>
+          </a>
+          <a class="compact-link" href="https://github.com/terrierteam/pyterrier_t5" target="_blank" rel="noopener">
+            <strong>PyTerrier T5</strong><span>MonoT5 and DuoT5 reranking</span>
+          </a>
+          <a class="compact-link" href="https://github.com/terrierteam/pyterrier_pisa" target="_blank" rel="noopener">
+            <strong>PyTerrier PISA</strong><span>Fast in-memory retrieval</span>
+          </a>
+          <a class="compact-link" href="https://github.com/terrierteam" target="_blank" rel="noopener">
+            <strong>Terrier Team</strong><span>Plugin ecosystem</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section soft-section" id="documentation">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="section-kicker">Reference</p>
+          <h2>Documentation</h2>
+          <p>
+            Start from the official documentation for installation, data models, transformers, operators,
+            experiments, extension packages, and troubleshooting.
+          </p>
+        </div>
+
+        <div class="documentation-panel">
+          <div>
+            <h3>PyTerrier Documentation</h3>
+            <p>
+              The documentation covers installation, importing datasets, Terrier indexing, running experiments,
+              learning to rank, artifacts, pipeline operators, debugging, and extension packages.
+            </p>
+          </div>
+          <div class="button-row">
+            <a class="resource-link" href="https://pyterrier.readthedocs.io/" target="_blank" rel="noopener">Open Docs ↗</a>
+            <a class="resource-link secondary" href="https://pyterrier.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">Latest Docs ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="presenters">
+      <div class="page-width">
+        <div class="section-heading">
+          <p class="section-kicker">People</p>
+          <h2>Presenter Profiles</h2>
+          <p>
+            The tutorial is delivered by researchers with long-standing experience in information retrieval,
+            PyTerrier, efficient retrieval systems, neural ranking, and RAG.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile-card">
+            <img src="assets/avatar-cm.svg" alt="Craig Macdonald" class="profile-avatar" />
+            <div class="profile-copy">
+              <h3>Craig Macdonald</h3>
+              <p class="profile-affiliation">University of Glasgow</p>
+              <p>Professor of Information Retrieval. His research focuses on efficient and effective search and recommendation, and he has extensive tutorial and teaching experience using PyTerrier.</p>
+              <div class="button-row">
+                <a class="resource-link" href="https://www.dcs.gla.ac.uk/~craigm/" target="_blank" rel="noopener">Profile ↗</a>
+                <a class="resource-link secondary" href="mailto:craig.macdonald@glasgow.ac.uk">Email</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="profile-card">
+            <img src="assets/avatar-sm.svg" alt="Sean MacAvaney" class="profile-avatar" />
+            <div class="profile-copy">
+              <h3>Sean MacAvaney</h3>
+              <p class="profile-affiliation">University of Glasgow</p>
+              <p>Senior Lecturer whose research focuses on efficient neural models for search, learned sparse retrieval, reranking, and practical IR systems.</p>
+              <div class="button-row">
+                <a class="resource-link" href="https://macavaney.us/" target="_blank" rel="noopener">Profile ↗</a>
+                <a class="resource-link secondary" href="mailto:sean.macavaney@glasgow.ac.uk">Email</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="profile-card">
+            <img src="assets/avatar-nt.svg" alt="Nicola Tonellotto" class="profile-avatar" />
+            <div class="profile-copy">
+              <h3>Nicola Tonellotto</h3>
+              <p class="profile-affiliation">University of Pisa</p>
+              <p>Associate Professor at the University of Pisa. His research focuses on efficient large-scale IR pipelines and data processing platforms.</p>
+              <div class="button-row">
+                <a class="resource-link" href="http://tonellotto.github.io" target="_blank" rel="noopener">Profile ↗</a>
+                <a class="resource-link secondary" href="mailto:nicola.tonellotto@unipi.it">Email</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="profile-card">
+            <img src="assets/avatar-xw.svg" alt="Xiao Wang" class="profile-avatar" />
+            <div class="profile-copy">
+              <h3>Xiao Wang</h3>
+              <p class="profile-affiliation">University of International Business and Economics</p>
+              <p>Assistant Professor whose research focuses on efficient and effective neural information retrieval, including dense retrieval and neural pseudo-relevance feedback.</p>
+              <div class="button-row">
+                <a class="resource-link" href="mailto:xiao.wang@uibe.edu.cn">Email</a>
+              </div>
             </div>
           </article>
         </div>
