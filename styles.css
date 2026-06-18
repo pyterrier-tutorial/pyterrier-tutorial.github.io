@@ -545,27 +545,35 @@ img {
 /* ---------- Extended resource sections ---------- */
 
 .quick-nav {
-  margin-top: -10px;
-  margin-bottom: 22px;
+  margin: 0 auto 26px;
+  padding: 22px 0 10px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
 }
+
 
 .quick-nav a {
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
-  padding: 0 14px;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.16);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.08);
   color: var(--text-soft);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.94rem;
+  font-weight: 750;
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.citation-actions {
+  margin-top: 18px;
 }
 
 .quick-nav a:hover {
@@ -828,4 +836,17 @@ img {
   .section-heading h2 {
     font-size: 1.8rem;
   }
+  .citation-section a,
+  .citation-section a:link,
+  .citation-section a:visited {
+    color: var(--accent) !important;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .citation-section a:hover {
+    color: #ff9a3a !important;
+    text-decoration: underline;
+  }
+
 }
