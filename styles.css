@@ -147,13 +147,14 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3.35rem, 4vw, 4.8rem);
-  line-height: 1.04;
+  /* font-size: clamp(3.05rem, 3.7vw, 4.45rem); */
+  font-size: clamp(3.15rem, 3.85vw, 4.6rem);
+  line-height: 1.07;
   font-weight: 800;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
   white-space: nowrap;
   max-width: none;
-  padding-right: 160px;
+  padding-right: 120px;
   color: var(--text-main);
 }
 
