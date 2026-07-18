@@ -252,8 +252,8 @@ img {
 .outline-section h2,
 .citation-section h2 {
   margin: 0;
-  font-size: 2.15rem;
-  line-height: 1.15;
+  font-size: 2.45rem;
+  line-height: 1.12;
   font-weight: 800;
 }
 
@@ -274,16 +274,16 @@ img {
 .outline-card {
   background: var(--bg-secondary);
   border-radius: var(--radius-xl);
-  padding: 24px 22px 20px;
+  padding: 28px 26px 24px;
   box-shadow: var(--shadow-soft);
-  min-height: 305px;
+  min-height: 335px;
   display: flex;
   flex-direction: column;
 }
 
 .outline-card h3 {
-  margin: 0 0 16px;
-  font-size: 1.28rem;
+  margin: 0 0 18px;
+  font-size: 1.42rem;
   line-height: 1.25;
   font-weight: 800;
 }
@@ -296,10 +296,10 @@ img {
 
 .outline-card ul {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1.2rem;
   color: var(--text-soft);
-  font-size: 0.98rem;
-  line-height: 1.48;
+  font-size: 1.08rem;
+  line-height: 1.58;
 }
 
 .outline-card li + li {
@@ -850,4 +850,78 @@ img {
     text-decoration: underline;
   }
 
+}
+
+/* ---------- Notebook demo list ---------- */
+
+.notebook-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: 1180px;
+}
+
+.notebook-row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: var(--radius-xl);
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.notebook-status {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 850;
+}
+
+.notebook-row.is-ready .notebook-status {
+  background: rgba(255,255,255,0.10);
+}
+
+.notebook-copy h3 {
+  margin: 0 0 5px;
+  color: var(--text-main);
+  font-size: 1.18rem;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.notebook-copy p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+.notebook-row .drive-link {
+  white-space: nowrap;
+}
+
+.notebook-row .drive-link[aria-disabled="true"] {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+@media (max-width: 860px) {
+  .notebook-row {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .notebook-row .drive-link {
+    grid-column: 1 / -1;
+    width: fit-content;
+    margin-left: 60px;
+  }
 }
