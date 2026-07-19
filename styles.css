@@ -858,7 +858,8 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
-  max-width: 1180px;
+  width: 100%;
+  max-width: none;
 }
 
 .notebook-row {
@@ -866,6 +867,7 @@ img {
   grid-template-columns: 48px minmax(0, 1fr) auto;
   gap: 18px;
   align-items: center;
+  width: 100%;
   padding: 18px 20px;
   border-radius: var(--radius-xl);
   background: var(--bg-secondary);
@@ -923,5 +925,77 @@ img {
     grid-column: 1 / -1;
     width: fit-content;
     margin-left: 60px;
+  }
+}
+
+
+/* ---------- Tutorial slides panel ---------- */
+
+.slides-section {
+  padding: 36px 0 44px;
+  background: var(--bg-primary);
+}
+
+.slides-panel {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  padding: 26px 28px;
+  border-radius: var(--radius-xl);
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.slides-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(242, 140, 40, 0.16);
+  color: var(--accent);
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.slides-copy .section-kicker {
+  margin-bottom: 5px;
+}
+
+.slides-copy h2 {
+  margin: 0 0 8px;
+  font-size: 1.65rem;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.slides-copy p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.slides-drive-link {
+  white-space: nowrap;
+}
+
+.slides-drive-link[aria-disabled="true"] {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+@media (max-width: 860px) {
+  .slides-panel {
+    grid-template-columns: 50px minmax(0, 1fr);
+  }
+
+  .slides-drive-link {
+    grid-column: 1 / -1;
+    width: fit-content;
+    margin-left: 70px;
   }
 }
